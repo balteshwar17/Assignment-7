@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css" media="all">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div id="container">
+    <div id="container1">
+        <p><b>Change font color</b><p>
+            <label></label>
+        <input type="radio" value="red" name="font_color" id="r_color" onclick="red_font();">Red
+        <input type="radio" value="green" name="font_color" id="g_color" onclick="green_font();">Green
+        <input type="radio" value="blue" name="font_color" id="b_color" onclick="blue_font();">Blue
+        
+    </div>
+    <div id="container3">
+        <p><b>Change background color</b><p>
+            <select id="bg_color" onclick="bg()">
+                <option></option>
+                <option value="red" >Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+
+    </div>
+    <div id="container2">
+<h1 id="cenetring">CSIS 1280</h1>
+
+    </div>
+
+<script>
+    
+    function red_font(){
+        document.getElementById("container2").style.color="red";
+
+
+    }
+    function green_font(){
+        document.getElementById("container2").style.color="green";
+
+
+    }
+    function blue_font(){
+        document.getElementById("container2").style.color="blue";
+
+
+    }
+    function bg(){
+        let c=document.getElementById("bg_color").value;
+
+        if(c=="red"){
+        
+        document.getElementById("container2").style.backgroundColor="red";}
+        
+        if(c=="green"){
+        
+        document.getElementById("container2").style.backgroundColor="green";}
+        if(c=="blue"){
+        
+        document.getElementById("container2").style.backgroundColor="blue";}
+
+
+    }
+
+</script>
+</body>
+</html>
